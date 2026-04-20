@@ -45,3 +45,19 @@ cognome → stringa
 annoNascita → numero
 sesso → Può essere solo "m" o "f".
 anniDiServizio (array di numeri, es. [2014, 2015, 2017, 2018]) */
+
+type Dipendente = {
+  nome: string,
+  cognome: string,
+  annoNascita: number,
+  sesso: 'm' | 'f',
+  anniDiServizio: number[]
+}
+
+let dipendenteFemmina: Dipendente = {
+  nome: 'Giorgia',
+  cognome: 'Bianchi',
+  annoNascita: 21,
+  sesso:  'f',
+  anniDiServizio: [2024,2025,2026]
+}
