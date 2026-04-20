@@ -7,3 +7,24 @@ Se è un numero: moltiplicalo per due e stampalo
 Se è un booleano: stampa “Sì” o “No” in base al suo valore
 
 In tutti gli altri casi: stampa “Tipo non supportato” */
+
+let dato: string | number | boolean = null //testato facendo ciao, 23, true e false
+
+if (typeof dato === 'string') {
+  console.log(dato.toUpperCase());
+  
+} else if (typeof dato === 'number'){
+  console.log(dato * 2);
+  
+} else if (typeof dato === 'boolean'){
+  if (dato === true) {
+    console.log('si');
+    
+  } else {
+    console.log('no');
+    
+  }
+} else {
+  console.log('Tipo non supportato');
+  
+}
